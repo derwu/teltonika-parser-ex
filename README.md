@@ -1,24 +1,27 @@
 # README #
 
 Parsing teltonika binary data from device FMB0XX.
-Right now supported Codec8 and Codec7 format, Codec 16 yet in process.
+Right now supported Codec8, Codec8 Extended and Codec7 format, Codec 16 yet in process.
+
+### Source ###
+
+Forked from: https://www.npmjs.com/package/teltonika-parser
 
 ### Installation ###
 
 Run console command
 
-`npm i teltonika-parser`
+`npm i teltonika-parser-ex`
 
 
 ### Usage example ###
 
-`const net = require('net');
- const Parser = require('teltonika-parser');
+```const net = require('net');
+ const Parser = require('teltonika-parser-ex');
  const binutils = require('binutils64');
  
  
  let server = net.createServer((c) => {
- 
      console.log("client connected");
      c.on('end', () => {
          console.log("client disconnected");
@@ -45,4 +48,4 @@ Run console command
  server.listen(5000, () => {
      console.log("Server started");
  });
- `
+ ```

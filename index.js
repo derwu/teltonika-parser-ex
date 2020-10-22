@@ -4,6 +4,7 @@ const binutils = require('binutils64');
 const codec7 = require('./codecs/codec7');
 const codec8 = require('./codecs/codec8');
 const codec16 = require('./codecs/codec8');
+const codec8ex = require('./codecs/codec8ex');
 
 
 class TeltonikaParser {
@@ -50,6 +51,9 @@ class TeltonikaParser {
                 break;
             case 16:
                 this._codec = new codec16(this._codecReader, this._avlObj.number_of_data);
+                break;
+            case 142:
+                this._codec = new codec8ex(this._codecReader, this._avlObj.number_of_data);
                 break;
         }
 
