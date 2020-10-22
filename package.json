@@ -1,0 +1,50 @@
+{
+  "_args": [
+    [
+      "teltonika-parser@0.0.15",
+      "/Users/tduda/src/device-adapter-microservice"
+    ]
+  ],
+  "_from": "teltonika-parser@0.0.15",
+  "_id": "teltonika-parser@0.0.15",
+  "_inBundle": false,
+  "_integrity": "sha512-RZINE0CVIqJpIRHxg81MqmO4CgcRfZAd2uhhFFqipySLsvnJ3OKcTnpjSS9yYduq7qMSJ4bRZvPP6AH2Un6J/A==",
+  "_location": "/teltonika-parser",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "teltonika-parser@0.0.15",
+    "name": "teltonika-parser",
+    "escapedName": "teltonika-parser",
+    "rawSpec": "0.0.15",
+    "saveSpec": null,
+    "fetchSpec": "0.0.15"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/teltonika-parser/-/teltonika-parser-0.0.15.tgz",
+  "_spec": "0.0.15",
+  "_where": "/Users/tduda/src/device-adapter-microservice",
+  "author": {
+    "name": "Mihail Shumilov",
+    "email": "mschumilow@gmail.com"
+  },
+  "dependencies": {
+    "binutils64": "^0.1.2",
+    "crc": "^3.5.0"
+  },
+  "description": "Parsing teltonika binary data from device FMB0XX. Right now supported Codec8 and Codec7 format, Codec 16 yet in process.",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "fs": "0.0.1-security",
+    "mocha": "^5.2.0",
+    "path": "^0.12.7"
+  },
+  "name": "teltonika-parser",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "version": "0.0.15"
+}
