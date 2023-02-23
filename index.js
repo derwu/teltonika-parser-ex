@@ -105,6 +105,10 @@ class TeltonikaParser {
   getAvl() {
     return this._avlObj;
   }
+
+  getImei() {
+    return this.imei;
+  }
 }
 
 module.exports = TeltonikaParser;
